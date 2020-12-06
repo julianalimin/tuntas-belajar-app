@@ -22,18 +22,15 @@
               size-sm="6"
               size-md="4"
               size-lg="3"
-              *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12]"
+              *ngFor="let kursus of daftarKursus"
             >
               <ion-card>
-                <img src="./assets/images/tuntas-belajar-ionic.jpg" />
+                <img src='./assets/images/{{kursus.coverPicture}}' alt="coverPicture" />
                 <ion-card-header>
-                  <ion-card-subtitle>Destination</ion-card-subtitle>
-                  <ion-card-title>Madison, WI</ion-card-title>
+                  <ion-card-title>{{kursus.name}}</ion-card-title>
                 </ion-card-header>
                 <ion-card-content>
-                  Founded in 1829 on an isthmus between Lake Monona and Lake
-                  Mendota, Madison was named the capital of the Wisconsin
-                  Territory in 1836.
+                  {{kursus.description}}
                 </ion-card-content>
               </ion-card>
             </ion-col>
