@@ -3,11 +3,11 @@ import { ContentService } from '../shared/api/content.service';
 import { Kursus } from '../shared/api/models/kursus';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss'],
+  selector: 'app-courses',
+  templateUrl: 'courses.page.html',
+  styleUrls: ['courses.page.scss'],
 })
-export class Tab1Page {
+export class CoursesPage {
   daftarKursus: Kursus[] = [];
 
   constructor(private contentService: ContentService) {
