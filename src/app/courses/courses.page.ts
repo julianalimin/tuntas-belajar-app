@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ContentService } from '../shared/api/content.service';
-import { Kursus } from '../shared/api/models/kursus';
+import { Course } from '../shared/api/models/course';
 
 @Component({
   selector: 'app-courses',
@@ -8,11 +8,15 @@ import { Kursus } from '../shared/api/models/kursus';
   styleUrls: ['courses.page.scss'],
 })
 export class CoursesPage {
-  daftarKursus: Kursus[] = [];
+  courseList: Course[] = [];
 
   constructor(private contentService: ContentService) {
-    this.contentService.getDaftarKursus().subscribe((response) => {
-      this.daftarKursus = response;
+    this.contentService.getCourseList().subscribe((response) => {
+      this.courseList = response;
     });
+  }
+
+  showCourse(course) {
+    console.log(course);
   }
 }

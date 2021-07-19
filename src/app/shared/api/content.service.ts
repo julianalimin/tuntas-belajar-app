@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Kursus } from './models/kursus';
+import { Course } from './models/course';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +8,7 @@ import { Kursus } from './models/kursus';
 export class ContentService {
   constructor(private http: HttpClient) {}
 
-  getDaftarKursus() {
-    return this.http.get<Kursus[]>('assets/json/daftar-kursus.json');
+  getCourseList() {
+    return this.http.get<Course[]>('assets/json/course-list.json');
   }
 }

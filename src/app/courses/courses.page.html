@@ -22,16 +22,17 @@
               size-sm="6"
               size-md="4"
               size-lg="3"
-              *ngFor="let kursus of daftarKursus"
+              *ngFor="let course of courseList"
             >
-              <ion-card>
-                <img src='./assets/images/{{kursus.coverPicture}}' alt="coverPicture" />
+              <ion-card (click)="showCourse(course)">
+                <img
+                  src="./assets/images/{{course.coverPicture}}"
+                  alt="coverPicture"
+                />
                 <ion-card-header>
-                  <ion-card-title>{{kursus.name}}</ion-card-title>
+                  <ion-card-title>{{course.name}}</ion-card-title>
                 </ion-card-header>
-                <ion-card-content>
-                  {{kursus.description}}
-                </ion-card-content>
+                <ion-card-content> {{course.description}} </ion-card-content>
               </ion-card>
             </ion-col>
           </ion-row>
