@@ -9,7 +9,7 @@ const routes: Routes = [
     children: [
       {
         path: 'courses',
-        loadChildren: () => import('../courses/courses.module').then(m => m.CoursesPageModule)
+        loadChildren: () => import('../courses/index/courses.module').then(m => m.CoursesPageModule)
       },
       {
         path: 'contact',
