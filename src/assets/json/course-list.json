@@ -1,13 +1,16 @@
 [
   {
+    "id": 1,
     "name": "Tuntas Belajar - Ionic",
     "coverPicture": "tuntas-belajar-ionic.jpg",
     "description": "Belajar Ionic Yuk! Disini kita akan kupas Tuntas apa itu Ionic."
   },{
+    "id": 2,
     "name": "Tips Berkarir di IT",
     "coverPicture": "tuntas-belajar-ionic.jpg",
     "description": "Ingin berkarir di IT? Disini akan dijelaskan apa-apa saja yang harus diperhatikan dan akan kalian alami saat mencoba berkarir"
   },{
+    "id": 3,
     "name": "Seri Gambar & Video di NodeJS",
     "coverPicture": "tuntas-belajar-ionic.jpg",
     "description": "Satu gambar memiliki 1000 arti. Tapi apa jadinya jika semua website tidak ada gambarnya? Disini akan dijelaskan cara menserve maupun manipulasi gambar menggunakan nodeJs"

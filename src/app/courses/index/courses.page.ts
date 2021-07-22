@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ContentService } from '../../shared/api/content.service';
 import { Course } from '../../shared/api/models/course';
 
@@ -10,13 +11,13 @@ import { Course } from '../../shared/api/models/course';
 export class CoursesPage {
   courseList: Course[] = [];
 
-  constructor(private contentService: ContentService) {
+  constructor(private contentService: ContentService, private router: Router) {
     this.contentService.getCourseList().subscribe((response) => {
       this.courseList = response;
     });
   }
 
   showCourse(course) {
-    console.log(course);
+    this.router.navigate([`/tabs/courses/${course.id}`]);
   }
 }
