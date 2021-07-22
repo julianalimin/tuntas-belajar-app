@@ -12,6 +12,10 @@ const routes: Routes = [
         loadChildren: () => import('../courses/index/courses.module').then(m => m.CoursesPageModule)
       },
       {
+        path: 'courses/:id',
+        loadChildren: () => import('../courses/detail/detail.module').then( m => m.DetailPageModule)
+      },
+      {
         path: 'contact',
         loadChildren: () => import('../contact/contact.module').then(m => m.ContactPageModule)
       },
